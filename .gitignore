@@ -1,0 +1,33 @@
+# Node-related
+node_modules/
+package-lock.json
+npm-debug.log
+
+# Build / Dist folders 
+dist/
+build/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE/Editor folders and files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# OS generated files
+*.log
+
+# Environment/Secrets
+.env
+.env.local
+
+# Mac
+.AppleDouble
+.LSOverride
+Icon?
+._*
+
+*.txt

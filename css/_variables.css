@@ -1,0 +1,20 @@
+:root {
+    /* TYPOGRAPHY */
+    --main-font: "Montserrat", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    --main-color: #000;
+    --main-font-size: 16px;
+
+    /* COLORS */
+    --dark: #252b42;
+    --dark2: #17213c;
+    --orange: #ff7b47;
+    --darkblue: #0d5c63;
+
+    /* RESPONSIVE DESIGN */
+    --minwidth: 320px;
+    --mw: calc(1050 * 1px); /* content width, container width */
+    --md1: calc(var(--mw) + 12px); /* 1st breakpoint */
+    --md2: calc(992.98 * 1px); /* for tablets */
+    --md3: calc(767.98 * 1px); /* for larger phones */
+    --md4: calc(479.98 * 1px); /* for smaller phones */
+}

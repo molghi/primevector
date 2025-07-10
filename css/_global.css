@@ -1,0 +1,75 @@
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+/* ================================================================================================ */
+
+/* push footer to the bottom */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
+}
+
+/* ================================================================================================ */
+
+/* CONTAINER */
+
+.container {
+    max-width: var(--mw);
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* First breakpoint: 1062px */
+@media (max-width: 1062px) {
+    .container {
+        max-width: 970px;
+    }
+}
+
+/* Second breakpoint: 992.98px */
+@media (max-width: 992.98px) {
+    .container {
+        max-width: 750px;
+    }
+}
+
+/* Third breakpoint: 767.98px */
+@media (max-width: 767.98px) {
+    .container {
+        max-width: none;
+        padding: 0 10px;
+    }
+}
+
+/* Optional fourth breakpoint: 479.98px */
+@media (max-width: 479.98px) {
+    .container {
+        padding: 0 5px;
+    }
+}
+
+/* @media (max-width: var(--md1)) {
+  .container {
+    max-width: 970px;
+  }
+}
+
+@media (max-width: var(--md2)) {
+  .container {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: var(--md3)) {
+  .container {
+    max-width: none;
+    padding: 0 10px;
+  }
+} */

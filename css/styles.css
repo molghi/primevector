@@ -1,0 +1,14 @@
+@import url("_variables.css"); /* PROJECT VARIABLES */
+@import url("_fonts.css"); /* FONTS */
+
+/* ================================================================================================ */
+
+@import url("_reset.css"); /* STYLES RESET TO DEFAULT */
+@import url("_global.css"); /* GLOBAL STYLES */
+@import url("_commonElements.css"); /* COMMON ELEMENTS */
+
+/* ================================================================================================ */
+
+@import url("_hamburgerMenu.css"); /* HAMBURGER MENU */
+
+@import url("_header.css"); /* HEADER */

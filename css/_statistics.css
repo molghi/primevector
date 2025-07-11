@@ -1,0 +1,95 @@
+.statistics {
+    margin-bottom: 200px;
+}
+
+.statistics__inner {
+}
+
+.statistics__title {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.statistics__subtitle {
+    max-width: 515px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.statistics__elements {
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+}
+
+.statistics__element {
+    border-radius: 7px;
+    width: 100%;
+    box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+    padding: 30px;
+    background-color: #fff;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.statistics__element-icon {
+    margin-bottom: 20px;
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.statistics__element-number {
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: 0.2px;
+    color: #252b42;
+    margin-bottom: 15px;
+    transition: all 0.3s;
+}
+
+.statistics__element-title {
+    transition: all 0.3s;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.1px;
+    color: #737373;
+}
+
+/* ================================================================================================ */
+/* ================================================================================================ */
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 1062px) {
+    .statistics__elements {
+        column-gap: 30px;
+    }
+    .statistics__element-title {
+        font-size: 15px;
+    }
+}
+
+/* ================================================================================================ */
+
+@media (max-width: 992.98px) {
+    .statistics__elements {
+        flex-wrap: wrap;
+        row-gap: 30px;
+    }
+    .statistics__element {
+        flex: 1 1 47%;
+    }
+}
+
+/* ================================================================================================ */
+
+@media (max-width: 767.98px) {
+}
+
+/* ================================================================================================ */
+
+@media (max-width: 479.98px) {
+}

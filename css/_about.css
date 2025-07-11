@@ -1,0 +1,171 @@
+.about {
+    margin-bottom: 200px;
+}
+
+.about__inner {
+}
+
+.about__title {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about__subtitle {
+    max-width: 515px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.about__bottom {
+    display: flex;
+    align-items: start;
+    column-gap: 120px;
+}
+
+.about__video {
+    flex: 1 0 600px;
+    position: relative;
+    transition: all 0.3s;
+}
+
+.about__video-click {
+}
+
+.about__video-click img {
+    max-width: 100%;
+    width: 100%;
+}
+
+.about__video-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: inline-block;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #ff7b47;
+}
+
+.about__video-button:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-left: 15px solid rgba(0, 0, 0, 0);
+    border-right: 15px solid rgba(0, 0, 0, 0);
+    border-top: 23px solid #fff;
+    transform: translate(-40%, -50%) rotate(-90deg);
+}
+
+.about__video:hover {
+    opacity: 0.9;
+}
+
+.about__body {
+}
+
+.about__body-title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 57px;
+    letter-spacing: 0.2px;
+    color: #252b42;
+    margin-bottom: 10px;
+}
+
+.about__body-text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    color: #737373;
+    margin-bottom: 50px;
+}
+
+.about__body-paragraphs {
+}
+
+.about__body-paragraph {
+    display: flex;
+    column-gap: 20px;
+}
+
+.about__body-paragraph + .about__body-paragraph {
+    margin-top: 30px;
+}
+
+.about__body-paragraph-icon {
+}
+
+.about__body-paragraph-body {
+}
+
+.about__body-paragraph-title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: #252b42;
+    margin-bottom: 5px;
+}
+
+.about__body-paragraph-text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #737373;
+}
+
+/* ================================================================================================ */
+/* ================================================================================================ */
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 1062px) {
+    .about__bottom {
+        column-gap: 60px;
+    }
+}
+
+/* ================================================================================================ */
+
+@media (max-width: 992.98px) {
+    .about__bottom {
+        flex-direction: column-reverse;
+        row-gap: 50px;
+    }
+    .about__body-title,
+    .about__body-text {
+        text-align: center;
+    }
+    .about__body-paragraphs {
+        margin: 0 auto;
+        max-width: fit-content;
+    }
+    .about__video {
+        flex: 1 1 100%;
+        align-self: center;
+    }
+}
+
+/* ================================================================================================ */
+
+@media (max-width: 767.98px) {
+}
+
+/* ================================================================================================ */
+
+@media (max-width: 479.98px) {
+    .about__subtitle {
+        margin-bottom: 25px;
+    }
+    .about__body-title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+}

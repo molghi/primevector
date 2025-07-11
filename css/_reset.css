@@ -55,7 +55,7 @@ body {
 }
 
 body.lock {
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 @media (max-width: var(--md3)) {

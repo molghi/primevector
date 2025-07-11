@@ -1,0 +1,142 @@
+.hero {
+    background: url(../assets/images/content/hero-bg.png) center right/cover no-repeat;
+    height: 100vh;
+    padding-top: 100px;
+}
+
+.hero__inner {
+    margin-top: 7%;
+    max-width: 400px;
+}
+
+.hero__title {
+    font-weight: 800;
+    font-size: 58px;
+    line-height: 80px;
+    letter-spacing: 0.2px;
+    color: var(--dark);
+    margin-bottom: 35px;
+}
+
+.hero__text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    color: #737373;
+    margin-bottom: 35px;
+}
+
+.hero__buttons {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.hero__button {
+    display: inline-block;
+    background-color: var(--orange);
+    color: #fff;
+    padding: 20px 36px;
+    border-radius: 37px;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    border: 1px solid transparent;
+}
+.hero__button:hover {
+    color: var(--orange);
+    background-color: transparent;
+    backdrop-filter: blur(3px);
+    border: 1px solid var(--orange);
+}
+
+.hero__button--transparent {
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--darkblue);
+    border: 1px solid var(--darkblue);
+}
+.hero__button--transparent:hover {
+    background-color: var(--darkblue);
+    color: #fff;
+    border: 1px solid var(--darkblue);
+}
+
+.hero__button:active {
+    opacity: 0.5;
+}
+
+/* ================================================================================================ */
+/* ================================================================================================ */
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 1062px) {
+    .hero {
+        position: relative;
+    }
+    .hero:after {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.3);
+        width: 100%;
+        height: 100%;
+    }
+    .hero__title,
+    .hero__text {
+        color: white;
+        position: relative;
+        z-index: 2;
+    }
+    .hero__button {
+        position: relative;
+        z-index: 2;
+    }
+    .hero__button:hover {
+        color: white;
+        border-color: white;
+    }
+    .hero__button--transparent {
+        color: white;
+        border: 1px solid white;
+    }
+    .hero__button--transparent:hover {
+        border: 1px solid var(--darkblue);
+    }
+}
+
+/* ================================================================================================ */
+
+@media (max-width: 992.98px) {
+}
+
+/* ================================================================================================ */
+
+@media (max-width: 767.98px) {
+    .hero__inner {
+        max-width: initial;
+        text-align: center;
+    }
+    .hero__buttons {
+        justify-content: center;
+    }
+}
+
+/* ================================================================================================ */
+
+@media (max-width: 479.98px) {
+    .hero__title {
+        line-height: 1.2;
+        font-size: 45px;
+    }
+    .hero__buttons {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .hero__button {
+        width: 100%;
+    }
+}

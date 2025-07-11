@@ -11,4 +11,15 @@
 
 @import url("_hamburgerMenu.css"); /* HAMBURGER MENU */
 
+/* SECTIONS */
 @import url("_header.css"); /* HEADER */
+@import url("_hero.css"); /* HERO */
+@import url("_features.css"); /* FEATURES */
+@import url("_statistics.css"); /* STATISTICS */
+@import url("_advice.css"); /* ADVICE */
+@import url("_about.css"); /* ABOUT */
+@import url("_partners.css"); /* PARTNERS */
+@import url("_newsletter.css"); /* NEWSLETTER */
+@import url("_touch.css"); /* TOUCH */
+@import url("_contact.css"); /* CONTACT */
+@import url("_footer.css"); /* FOOTER */

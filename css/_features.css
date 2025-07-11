@@ -1,0 +1,70 @@
+.features {
+    transform: translateY(-50%);
+    margin-bottom: 100px;
+}
+
+.features__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 35px;
+}
+
+.features__element {
+    border-radius: 7px;
+    width: 328px;
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+    transition: all 0.5s;
+}
+
+.features__element-icon {
+    max-width: 48px;
+    margin-bottom: 15px;
+    min-height: 50px;
+}
+
+.features__element-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+    color: #252b42;
+    margin-bottom: 10px;
+}
+
+.features__element-text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #737373;
+}
+
+/* ================================================================================================ */
+/* ================================================================================================ */
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 1062px) {
+    .features {
+        position: relative;
+        z-index: 2;
+    }
+    .features__element-title {
+        font-size: 22px;
+    }
+}
+
+/* ================================================================================================ */
+
+@media (max-width: 992.98px) {
+    .features__inner {
+        flex-wrap: wrap;
+        row-gap: 35px;
+    }
+    .features {
+        transform: translateY(-25%);
+    }
+}

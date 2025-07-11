@@ -1,0 +1,108 @@
+.advice {
+    margin-bottom: 200px;
+}
+
+.advice__inner {
+}
+
+.advice__title {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.advice__subtitle {
+    max-width: 470px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.advice__elements {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 40px;
+}
+
+.advice__element {
+    flex: 1 1 calc(100% / 4);
+    box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+    /* max-width: 230px; */
+    /* min-width: 230px; */
+    min-height: 340px;
+    border-radius: 7px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.advice__element-body {
+    background-color: #fff;
+    padding: 30px;
+    flex-grow: 1;
+}
+
+.advice__element-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.1px;
+    color: #252b42;
+    margin-bottom: 15px;
+}
+
+.advice__element-text {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #737373;
+}
+
+.advice__element-img img {
+    max-width: 100%;
+}
+
+/* ================================================================================================ */
+/* ================================================================================================ */
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 1062px) {
+    .advice__element-title {
+        font-size: 18px;
+    }
+}
+
+/* ================================================================================================ */
+
+@media (max-width: 992.98px) {
+    .advice__elements {
+        flex-wrap: wrap;
+        row-gap: 40px;
+    }
+    .advice__element {
+        flex: 1 1 calc((100% / 2.3));
+    }
+    .advice__element-img img {
+        width: 100%;
+    }
+}
+
+/* ================================================================================================ */
+
+@media (max-width: 767.98px) {
+    .advice__elements {
+        align-items: flex-start;
+        row-gap: 30px;
+        column-gap: 30px;
+    }
+}
+
+/* ================================================================================================ */
+
+@media (max-width: 479.98px) {
+    .advice__element {
+        flex: 1 1 100%;
+    }
+}

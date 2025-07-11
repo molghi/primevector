@@ -1,0 +1,134 @@
+.touch {
+    margin-bottom: 200px;
+}
+
+.touch__inner {
+}
+
+.touch__title {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.touch__subtitle {
+    max-width: 470px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.touch__bottom {
+    display: flex;
+    align-items: center;
+}
+
+.touch__element {
+    box-shadow: 0px 0 19px rgba(0, 0, 0, 0.5);
+    background-color: #fff;
+    padding: 0 40px;
+    min-height: 333px;
+    text-align: center;
+    /* flex: 1 1 328px; */
+    flex: 1 1 calc(100% / 3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.touch__element:nth-child(1) {
+    border-radius: 7px 0 0 7px;
+}
+.touch__element:nth-child(3) {
+    border-radius: 0 7px 7px 0;
+}
+
+.touch__element-icon {
+    margin-bottom: 15px;
+}
+
+.touch__element-text {
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    color: #252b42;
+    margin-bottom: 5px;
+}
+
+.touch__element-text a {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.touch__element-title {
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 0.1px;
+    color: #252b42;
+    margin-bottom: 25px;
+}
+
+.touch__element-button {
+    border: 1px solid #ff7b47;
+    color: #ff7b47;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.touch__element--big {
+    border-radius: 7px;
+    min-height: 393px;
+    background-color: #252b42;
+}
+
+.touch__element--big svg path {
+    fill: white;
+}
+
+.touch__element--big .touch__element-text,
+.touch__element--big .touch__element-title,
+.touch__element--big .touch__element-button {
+    color: white;
+    border-color: white;
+}
+
+/* ================================================================================================ */
+/* ================================================================================================ */
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 1062px) {
+}
+
+/* ================================================================================================ */
+
+@media (max-width: 992.98px) {
+    .touch__bottom {
+        flex-wrap: wrap;
+        column-gap: 30px;
+        row-gap: 30px;
+        justify-content: center;
+    }
+    .touch__element {
+        flex: 1 0 calc(100% / 2.2);
+    }
+    .touch__element:nth-child(1) {
+        order: 1;
+    }
+    .touch__element:nth-child(2) {
+        order: 3;
+    }
+    .touch__element:nth-child(3) {
+        order: 2;
+    }
+}
+
+/* ================================================================================================ */
+
+@media (max-width: 767.98px) {
+}
+
+/* ================================================================================================ */
+
+@media (max-width: 479.98px) {
+}

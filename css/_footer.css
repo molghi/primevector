@@ -1,0 +1,191 @@
+.footer {
+}
+
+.footer__top {
+    background-color: #17213c;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.footer__top-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__top-column {
+    padding: 0 10px;
+}
+
+.footer__top-column-title {
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.1px;
+    margin-bottom: 20px;
+}
+
+.footer__top-column-list {
+}
+
+.footer__top-column-item + .footer__top-column-item {
+    margin-top: 15px;
+}
+
+.footer__top-column-link {
+    font-size: 14px;
+    letter-spacing: 0.2px;
+}
+
+.footer__top-column--contacts {
+}
+
+.footer__top-column-title--opened {
+}
+
+.footer__top-column-link--phone,
+.footer__top-column-link--location,
+.footer__top-column-link--mail {
+    display: inline-block;
+    margin-bottom: 15px;
+    padding-left: 40px;
+    position: relative;
+}
+
+.footer__top-column-link--phone:after,
+.footer__top-column-link--location:after,
+.footer__top-column-link--mail:after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0;
+}
+
+.footer__top-column-link--phone:after {
+    background: url(../assets/images/icons/phone.svg) 0 0 no-repeat;
+    width: 23px;
+    height: 23px;
+    top: -3px;
+}
+
+.footer__top-column-link--location:after {
+    background: url(../assets/images/icons/location.svg) 0 0 no-repeat;
+    width: 24px;
+    height: 30px;
+    top: -7px;
+}
+
+.footer__top-column-link--mail:after {
+    background: url(../assets/images/icons/mail.svg) 0 0 no-repeat;
+    width: 24px;
+    height: 25px;
+    top: -3px;
+}
+
+.footer__bottom {
+    padding: 25px 0;
+}
+
+.footer__bottom-columns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__bottom-column {
+}
+
+.footer__copy {
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.2px;
+    color: #737373;
+}
+
+.footer__social {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.footer__social-link {
+}
+
+/* ================================================================================================ */
+/* ================================================================================================ */
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 1062px) {
+}
+
+/* ================================================================================================ */
+
+@media (max-width: 992.98px) {
+    .footer__top-columns {
+        flex-wrap: wrap;
+        row-gap: 40px;
+    }
+    .footer__top-column:last-child {
+        flex: 1;
+    }
+}
+
+/* ================================================================================================ */
+
+@media (max-width: 767.98px) {
+    .footer__top-column--contacts {
+        align-self: center;
+    }
+    .footer__top-column--contacts .footer__top-column-list {
+        display: block;
+    }
+    .footer__bottom-columns {
+        flex-direction: column-reverse;
+    }
+    .footer__copy {
+        text-align: center;
+        line-height: 1.5;
+        max-width: 200px;
+    }
+    .footer__social {
+        margin-bottom: 20px;
+    }
+    .footer__top-column-title {
+        position: relative;
+    }
+    .footer__top-column-title:after {
+        content: "";
+        position: absolute;
+        top: 5px;
+        transition: all 0.3s;
+        right: 0;
+        transform: rotate(0deg);
+        border-left: 5px solid rgba(0, 0, 0, 0);
+        border-right: 5px solid rgba(0, 0, 0, 0);
+        border-top: 7px solid #fff;
+    }
+    .footer__top-column-title--opened:after {
+        transform: rotate(180deg);
+    }
+    .footer__top-column {
+        align-self: center;
+        width: 240px;
+    }
+    .footer__top-columns {
+        flex-direction: column;
+    }
+    .footer__top-column-list {
+        display: none;
+        margin-bottom: 25px;
+    }
+    .footer__top-columns {
+        row-gap: 0;
+    }
+    .footer__top {
+        padding: 50px 0 30px;
+    }
+}
+
+/* ================================================================================================ */
+
+@media (max-width: 479.98px) {
+}

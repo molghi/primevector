@@ -1,0 +1,117 @@
+.newsletter {
+    position: relative;
+    background-color: #252b42;
+    color: #fff;
+    height: 77px;
+    margin-bottom: 200px;
+}
+
+.newsletter__inner {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    display: flex;
+    column-gap: 180px;
+    border-radius: 7px;
+    align-items: center;
+    background-color: #252b42;
+    padding: 0 40px;
+    margin: 0 auto;
+    /* width: 75vw; */
+    width: 985px;
+    height: 150px;
+    transform: translate(-50%, 0);
+}
+
+.newsletter__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+    flex: 1 0 30%;
+}
+
+.newsletter__form {
+    display: flex;
+    align-items: center;
+    flex: 1 1 50%;
+}
+
+.newsletter__form-input {
+    /* width: 330px; */
+    width: 100%;
+    padding: 14px 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    transition: all 0.3s;
+    border-radius: 5px 0 0 5px;
+}
+
+.newsletter__form-button {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    padding: 0 22px;
+    display: inline-block;
+    height: 100%;
+    background-color: #ff7b47;
+    letter-spacing: 0.2px;
+    border-radius: 0 5px 5px 0;
+    align-self: stretch;
+    height: auto;
+}
+
+/* ================================================================================================ */
+/* ================================================================================================ */
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 1062px) {
+}
+
+/* ================================================================================================ */
+
+@media (max-width: 992.98px) {
+    .newsletter__inner {
+        border-radius: 0;
+        position: absolute;
+        width: 100%;
+        max-width: 100%;
+        justify-content: space-between;
+        column-gap: 100px;
+    }
+}
+
+/* ================================================================================================ */
+
+@media (max-width: 767.98px) {
+    .newsletter__inner {
+        flex-direction: column;
+        padding: 30px 40px;
+        min-height: 150px;
+        height: auto;
+    }
+    .newsletter__title {
+        margin-bottom: 20px;
+        flex: 1;
+        text-align: center;
+    }
+}
+
+/* ================================================================================================ */
+
+@media (max-width: 479.98px) {
+    .newsletter__form {
+        flex-direction: column;
+        width: 100%;
+        row-gap: 20px;
+    }
+    .newsletter__form-input {
+        border-radius: 5px;
+    }
+    .newsletter__form-button {
+        border-radius: 5px;
+        height: 50px;
+    }
+}

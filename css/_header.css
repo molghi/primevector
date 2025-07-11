@@ -1,5 +1,11 @@
 .header {
     padding: 35px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: all 0.3s;
 }
 
 .header__box {
@@ -30,6 +36,7 @@
 }
 
 .header__menu-link {
+    transition: all 0.3s;
 }
 
 .header__menu-link.active {
@@ -44,10 +51,30 @@
     opacity: 1;
 }
 
+.header.white {
+    background-color: #fff;
+    box-shadow: 0 0 5px grey;
+}
+.header.white .header__menu-link,
+.header.white .header__logo {
+    color: #000;
+}
+
 /* ================================================================================================ */
 /* ================================================================================================ */
 
 /* RESPONSIVE DESIGN */
+
+@media (max-width: 1062px) {
+    .header__menu-link {
+        color: white;
+    }
+    .header__menu-link:not(.active) {
+        opacity: 1;
+    }
+}
+
+/* ================================================================================================ */
 
 @media (max-width: 992.98px) {
     .header__logo {
@@ -63,9 +90,16 @@
     }
     .header__logo {
         margin-right: 0;
+        color: white;
     }
     .header__box {
         justify-content: space-between;
+    }
+    .header.active .header__menu-link {
+        color: #000;
+    }
+    .header.active .header__logo {
+        color: #000;
     }
 }
 

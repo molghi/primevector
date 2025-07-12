@@ -42,16 +42,6 @@
 
 /* ================================================================================================ */
 
-.disabled {
-    display: none;
-}
-
-.enabled {
-    display: block;
-}
-
-/* ================================================================================================ */
-
 /* BUTTONS */
 
 .button {
@@ -60,10 +50,6 @@
     color: inherit;
     font-size: inherit;
     transition: 0.3s ease 0s;
-}
-
-.button:hover {
-    /* opacity: 0.7; */
 }
 
 /* ================================================================================================ */
@@ -101,14 +87,16 @@ textarea {
     font-weight: 700;
     font-size: 24px;
     letter-spacing: 0.1px;
-    color: #252b42;
+    color: var(--dark);
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
 }
+
 .logo span:first-child {
     color: rgb(68, 184, 230);
 }
+
 .logo:hover {
     opacity: 0.5;
 }

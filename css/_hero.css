@@ -23,7 +23,7 @@
     font-size: 20px;
     line-height: 30px;
     letter-spacing: 0.2px;
-    color: #737373;
+    color: var(--grey);
     margin-bottom: 35px;
 }
 
@@ -39,8 +39,6 @@
     color: #fff;
     padding: 20px 36px;
     border-radius: 37px;
-    -webkit-transition: all 0.3s;
-    -o-transition: all 0.3s;
     transition: all 0.3s;
     border: 1px solid transparent;
 }
@@ -106,11 +104,6 @@
     .hero__button--transparent:hover {
         border: 1px solid var(--darkblue);
     }
-}
-
-/* ================================================================================================ */
-
-@media (max-width: 992.98px) {
 }
 
 /* ================================================================================================ */

@@ -2,7 +2,7 @@
 }
 
 .footer__top {
-    background-color: #17213c;
+    background-color: var(--dark2);
     color: #fff;
     padding: 50px 0;
 }
@@ -33,6 +33,10 @@
 .footer__top-column-link {
     font-size: 14px;
     letter-spacing: 0.2px;
+}
+
+.footer__top-column-link:hover {
+    text-decoration: underline;
 }
 
 .footer__top-column--contacts {
@@ -97,7 +101,7 @@
     font-weight: 600;
     font-size: 12px;
     letter-spacing: 0.2px;
-    color: #737373;
+    color: var(--grey);
 }
 
 .footer__social {
@@ -107,17 +111,17 @@
 }
 
 .footer__social-link {
+    transition: all 0.3s;
+}
+
+.footer__social-link:hover {
+    opacity: 0.6;
 }
 
 /* ================================================================================================ */
 /* ================================================================================================ */
 
 /* RESPONSIVE DESIGN */
-
-@media (max-width: 1062px) {
-}
-
-/* ================================================================================================ */
 
 @media (max-width: 992.98px) {
     .footer__top-columns {
@@ -183,9 +187,4 @@
     .footer__top {
         padding: 50px 0 30px;
     }
-}
-
-/* ================================================================================================ */
-
-@media (max-width: 479.98px) {
 }

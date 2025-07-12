@@ -17,7 +17,7 @@
     font-size: 24px;
     line-height: 32px;
     letter-spacing: 0.1px;
-    color: #252b42;
+    color: var(--dark);
     margin-bottom: 10px;
 }
 
@@ -26,7 +26,7 @@
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0.2px;
-    color: #737373;
+    color: var(--grey);
 }
 
 .contact__button {
@@ -39,22 +39,17 @@
     letter-spacing: 0.2px;
     border-radius: 5px;
     padding: 15px 40px;
+    transition: all 0.3s;
+}
+
+.contact__button:hover {
+    opacity: 0.8;
 }
 
 /* ================================================================================================ */
 /* ================================================================================================ */
 
 /* RESPONSIVE DESIGN */
-
-@media (max-width: 1062px) {
-}
-
-/* ================================================================================================ */
-
-@media (max-width: 992.98px) {
-}
-
-/* ================================================================================================ */
 
 @media (max-width: 767.98px) {
     .contact__inner {
@@ -64,9 +59,4 @@
     .contact__text {
         margin-bottom: 20px;
     }
-}
-
-/* ================================================================================================ */
-
-@media (max-width: 479.98px) {
 }

@@ -47,7 +47,7 @@
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background-color: #ff7b47;
+    background-color: var(--orange);
 }
 
 .about__video-button:after {
@@ -73,7 +73,7 @@
     font-size: 40px;
     line-height: 57px;
     letter-spacing: 0.2px;
-    color: #252b42;
+    color: var(--dark);
     margin-bottom: 10px;
 }
 
@@ -82,7 +82,7 @@
     font-size: 14px;
     line-height: 30px;
     letter-spacing: 0.2px;
-    color: #737373;
+    color: var(--grey);
     margin-bottom: 50px;
 }
 
@@ -109,7 +109,7 @@
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.1px;
-    color: #252b42;
+    color: var(--dark);
     margin-bottom: 5px;
 }
 
@@ -118,7 +118,7 @@
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.2px;
-    color: #737373;
+    color: var(--grey);
 }
 
 /* ================================================================================================ */
@@ -151,11 +151,6 @@
         flex: 1 1 100%;
         align-self: center;
     }
-}
-
-/* ================================================================================================ */
-
-@media (max-width: 767.98px) {
 }
 
 /* ================================================================================================ */

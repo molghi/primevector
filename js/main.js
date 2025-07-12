@@ -3,6 +3,7 @@
 const headerEl = document.querySelector(".header");
 const hamburgerEl = document.querySelector(".header__hamburger-menu");
 const headerMenuEl = document.querySelector(".header__menu");
+const backToTopBtn = document.querySelector(".back-to-top");
 
 // ================================================================================================
 
@@ -33,6 +34,22 @@ window.addEventListener("scroll", function () {
     } else {
         headerEl.classList.remove("white");
     }
+
+    if (window.scrollY > window.innerHeight) {
+        backToTopBtn.classList.remove("invisible");
+    } else {
+        backToTopBtn.classList.add("invisible");
+    }
+});
+
+// ================================================================================================
+
+// Scroll to top
+backToTopBtn.addEventListener("click", function () {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+    });
 });
 
 // ================================================================================================

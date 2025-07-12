@@ -47,7 +47,7 @@
     font-size: 20px;
     line-height: 28px;
     letter-spacing: 0.1px;
-    color: #252b42;
+    color: var(--dark);
     margin-bottom: 15px;
 }
 
@@ -56,7 +56,7 @@
     font-size: 13px;
     line-height: 20px;
     letter-spacing: 0.2px;
-    color: #737373;
+    color: var(--grey);
 }
 
 .advice__element-img img {

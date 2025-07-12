@@ -1,6 +1,6 @@
 .newsletter {
     position: relative;
-    background-color: #252b42;
+    background-color: var(--dark);
     color: #fff;
     height: 77px;
     margin-bottom: 200px;
@@ -14,7 +14,7 @@
     column-gap: 180px;
     border-radius: 7px;
     align-items: center;
-    background-color: #252b42;
+    background-color: var(--dark);
     padding: 0 40px;
     margin: 0 auto;
     /* width: 75vw; */
@@ -55,22 +55,22 @@
     padding: 0 22px;
     display: inline-block;
     height: 100%;
-    background-color: #ff7b47;
+    background-color: var(--orange);
     letter-spacing: 0.2px;
     border-radius: 0 5px 5px 0;
     align-self: stretch;
     height: auto;
+    transition: all 0.3s;
+}
+
+.newsletter__form-button:hover {
+    opacity: 0.8;
 }
 
 /* ================================================================================================ */
 /* ================================================================================================ */
 
 /* RESPONSIVE DESIGN */
-
-@media (max-width: 1062px) {
-}
-
-/* ================================================================================================ */
 
 @media (max-width: 992.98px) {
     .newsletter__inner {
@@ -113,5 +113,8 @@
     .newsletter__form-button {
         border-radius: 5px;
         height: 50px;
+    }
+    .newsletter {
+        top: 120px;
     }
 }
